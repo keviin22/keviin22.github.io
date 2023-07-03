@@ -1,0 +1,69 @@
+.formacao{
+  background: #ffffff;
+  color: #141414;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 40px 20px;
+  margin: 0 auto;
+  gap: 100px;
+  align-items: center;
+}
+
+.formacao-texto{
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 40ch;
+  margin-bottom: 60px;
+}
+
+.diploma{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+  padding: 20px;
+  background: #e0dfdf;
+  color: #141414;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.diploma::before{
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url("../img/cursos.svg")no-repeat;
+  position: absolute;
+  left: -28px;
+  top: 15px;
+}
+
+@media (max-width: 800px){
+  .formacao{
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .formacao .subtitulo{
+    color: #141414;
+  }
+
+  .formacao-texto{
+    font-size: 1.25rem;
+  }
+
+  .diploma-ano{
+    position: initial;
+    order: 1;
+    width: initial;
+    text-align: left;
+  }
+}
+
+@media (max-width: 400px){
+  .formacao{
+    grid-auto-flow: dense;
+  }
+}
