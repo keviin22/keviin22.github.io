@@ -1,0 +1,36 @@
+.header-bg{
+  background: #000000;
+}
+
+.header{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-menu{
+  display: flex;
+  gap: 40px;
+  padding: 16px 24px;
+}
+
+.header-menu a{
+  color: #ffffff;
+  display: inline-block;
+  font-size: 18px;
+  position: relative;
+  text-decoration: none;
+}
+
+.header-menu a:after{
+  content: "";
+  display: block;
+  background: #ffffff;
+  width: 0px;
+  transition: 0.3s;
+  position: absolute;
+  height: 2px;
+}
+
+.header-menu a:hover:after{
+  width: 100%;
+}
